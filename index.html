@@ -106,6 +106,15 @@
   th { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
   td.w { font-family: "Fraunces", serif; font-weight: 600; white-space: nowrap; }
 
+  .skill + .skill { margin-top: 18px; }
+  .skill .top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .skill .name { font-family: "Fraunces", serif; font-weight: 600; font-size: 19px; }
+  .skill .pct { font-size: 13px; font-weight: 600; color: var(--grass); white-space: nowrap; }
+  .bar { height: 10px; border-radius: 999px; background: var(--line); margin: 6px 0 8px; overflow: hidden; }
+  .bar span { display: block; height: 100%; border-radius: 999px; background: var(--grass); }
+  .skill.wip .pct { color: var(--amber); }
+  .skill.wip .bar span { background: var(--amber); }
+
   .found { border: 2px solid var(--amber); background: linear-gradient(var(--amber-soft), var(--card) 110px); }
   .found h2 { color: var(--amber); }
   .btn {
@@ -179,6 +188,8 @@
         <li>The spot under the kitchen table</li>
         <li>Hunting kibble with my nose</li>
         <li>My rope toy</li>
+        <li>When you throw the ball. Throw it. Don't take it. Just throw it.</li>
+        <li>Frozen Kongs stuffed with kibble and melted cheese. I am teething, so this is a long-term project.</li>
         <li>YouTube TV. Ducks and dogs only.</li>
         <li>Being pet</li>
         <li>Walks</li>
@@ -194,13 +205,26 @@
         <li>The neighbor's Halloween decorations. Tacky.</li>
         <li>Cats</li>
         <li>The other dog in the mirror. He copies everything I do.</li>
-        <li>My crate <span class="aside">(we are working on it)</span></li>
         <li>When you stop petting me</li>
         <li>Baths. I have gone no-bath. It is the next evolution of no-poo. My natural oils are doing the work. <span class="aside">(Yeah, right, buddy. — Gus)</span></li>
         <li>The hair dryer. A tiny hurricane, pointed directly at me, on purpose.</li>
       </ul>
     </section>
   </div>
+
+  <section class="card">
+    <h2>Training report</h2>
+    <div class="skill">
+      <div class="top"><span class="name">Crate</span><span class="pct">Mastered</span></div>
+      <div class="bar"><span style="width:100%"></span></div>
+      <p class="aside">I walk in on my own, no fuss. I never minded the crate. I just did not want the fun to end.</p>
+    </div>
+    <div class="skill wip">
+      <div class="top"><span class="name">Fetch</span><span class="pct">About 60%</span></div>
+      <div class="bar"><span style="width:60%"></span></div>
+      <p class="aside">I am starting to notice that bringing the ball back makes it fly again. I have done it a few times. I will do it again when I feel like it.</p>
+    </div>
+  </section>
 
   <section class="card">
     <h2>Growth log</h2>
